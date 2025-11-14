@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Network - Protect Earth</title>
+    <title>Antarctic Shield - Protect Antarctica</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,12 +14,12 @@
         }
 
         :root {
-            --primary: #2e7d32;
-            --secondary: #4caf50;
-            --accent: #8bc34a;
-            --light: #e8f5e9;
-            --dark: #1b5e20;
-            --text: #333333;
+            --primary: #0d47a1;
+            --secondary: #1976d2;
+            --accent: #4fc3f7;
+            --light: #e3f2fd;
+            --dark: #062b4f;
+            --text: #1e293b;
             --white: #ffffff;
         }
 
@@ -101,7 +101,8 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background: linear-gradient(rgba(0, 10, 30, 0.7), rgba(0, 30, 60, 0.6)),
+            url('https://images.unsplash.com/photo-1516908205727-40afad9449a0?auto=format&fit=crop&w=2073&q=80');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -119,7 +120,7 @@
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
         .hero p {
@@ -213,7 +214,21 @@
         }
 
         .about-text p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        .about-list li {
+            margin-bottom: 0.4rem;
+        }
+
+        .about-list i {
+            margin-right: 0.5rem;
+            color: var(--primary);
         }
 
         .stats {
@@ -426,15 +441,15 @@
             .about-content {
                 grid-template-columns: 1fr;
             }
-            
+
             .initiatives-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .stats {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -444,11 +459,11 @@
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .hero p {
                 font-size: 1.1rem;
             }
-            
+
             nav ul {
                 display: none;
                 position: absolute;
@@ -461,28 +476,28 @@
                 text-align: center;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             }
-            
+
             nav ul.active {
                 display: flex;
             }
-            
+
             nav ul li {
                 margin: 0;
                 padding: 0.8rem 0;
             }
-            
+
             .mobile-menu {
                 display: block;
             }
-            
+
             .initiatives-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .footer-content {
                 grid-template-columns: 1fr;
             }
-            
+
             .stats {
                 grid-template-columns: 1fr;
             }
@@ -499,8 +514,8 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Green Network</span>
+                <i class="fas fa-snowflake"></i>
+                <span>Antarctic Shield</span>
             </div>
             <nav>
                 <div class="mobile-menu">
@@ -508,9 +523,9 @@
                 </div>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">Antarctica</a></li>
                     <li><a href="#initiatives">Initiatives</a></li>
-                    <li><a href="#get-involved">Get Involved</a></li>
+                    <li><a href="#get-involved">Take Action</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -520,9 +535,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Protect Our Planet, Preserve Our Future</h1>
-            <p>Join the global movement to create a sustainable world through conservation, education, and community action.</p>
-            <a href="#get-involved" class="btn">Join Our Network</a>
+            <h1>Protect Antarctica, Protect the Planet</h1>
+            <p>The last great wilderness is warming. Safeguard its ice, wildlife, and oceans for future generations.</p>
+            <a href="#get-involved" class="btn">Support Antarctic Protection</a>
         </div>
     </section>
 
@@ -530,41 +545,49 @@
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Green Network</h2>
-                <p>We are a global community dedicated to environmental protection and sustainable development.</p>
+                <h2>Why Antarctica Matters</h2>
+                <p>Antarctica is Earth’s natural climate regulator, reflecting sunlight, storing freshwater, and hosting unique species found nowhere else.</p>
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
+                    <img src="https://images.unsplash.com/photo-1516900557549-41557d405adf?auto=format&fit=crop&w=2070&q=80" alt="Antarctic landscape and penguins">
                 </div>
                 <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>Green Network is committed to creating a sustainable future by protecting natural ecosystems, promoting renewable energy, and empowering communities to take environmental action.</p>
-                    <p>Founded in 2010, we've grown from a small grassroots organization to an international network with over 50,000 members across 120 countries.</p>
-                    <p>Our approach combines scientific research, community engagement, and policy advocacy to address the most pressing environmental challenges of our time.</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <h3>Our Mission in the Frozen South</h3>
+                    <p>Antarctic Shield is a collaborative initiative focused on protecting Antarctica’s fragile ecosystems through science-based conservation, international cooperation, and public awareness.</p>
+                    <p>From melting ice shelves to vulnerable penguin colonies and krill populations, the changes in Antarctica are a warning signal for the entire planet.</p>
+                    <p>We work with researchers, policy makers, and communities worldwide to reduce human impact, expand marine protected areas, and promote responsible tourism.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-ice-cream"></i>Monitor ice loss and sea-level rise trends</li>
+                        <li><i class="fas fa-fish"></i>Protect marine life, including krill, seals, whales, and penguins</li>
+                        <li><i class="fas fa-hand-holding-heart"></i>Promote low-impact research and eco-tourism practices</li>
+                        <li><i class="fas fa-scale-balanced"></i>Support strong international environmental agreements</li>
+                    </ul>
+                    <br>
+                    <a href="#initiatives" class="btn">Explore Our Work</a>
                 </div>
             </div>
+
             <div class="stats">
                 <div class="stat-item">
-                    <i class="fas fa-tree"></i>
-                    <h3 class="counter" data-target="2500000">0</h3>
-                    <p>Trees Planted</p>
+                    <i class="fas fa-hippo"></i>
+                    <h3 class="counter" data-target="46">0</h3>
+                    <p>Protected Species Focus</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <h3 class="counter" data-target="50000">0</h3>
-                    <p>Active Members</p>
+                    <i class="fas fa-flask"></i>
+                    <h3 class="counter" data-target="70">0</h3>
+                    <p>Partner Research Stations</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-globe-americas"></i>
+                    <i class="fas fa-water"></i>
+                    <h3 class="counter" data-target="4000000">0</h3>
+                    <p>km² Proposed Marine Reserves</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-people-group"></i>
                     <h3 class="counter" data-target="120">0</h3>
-                    <p>Countries Reached</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-recycle"></i>
-                    <h3 class="counter" data-target="1500">0</h3>
-                    <p>Cleanup Projects</p>
+                    <p>Global Partner Organizations</p>
                 </div>
             </div>
         </div>
@@ -574,37 +597,37 @@
     <section class="initiatives" id="initiatives">
         <div class="container">
             <div class="section-title">
-                <h2>Our Initiatives</h2>
-                <p>Discover the key programs and projects we're implementing to protect our planet.</p>
+                <h2>Key Conservation Initiatives</h2>
+                <p>We focus on concrete, science-based actions to protect Antarctica’s ice, wildlife, and surrounding Southern Ocean.</p>
             </div>
             <div class="initiatives-grid">
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://dialogue.earth/content/uploads/2021/04/lessons-from-the-rush-to-reforest-china-dialogue-2400x1599.jpg" alt="Reforestation">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1974&q=80" alt="Ice shelf monitoring">
                     </div>
                     <div class="initiative-content">
-                        <h3>Global Reforestation</h3>
-                        <p>Planting millions of trees worldwide to restore ecosystems, combat climate change, and protect biodiversity.</p>
+                        <h3>Ice & Climate Monitoring</h3>
+                        <p>Supporting long-term monitoring of ice sheets, glaciers, and sea ice to better understand and respond to global sea-level rise.</p>
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
+                        <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=1974&q=80" alt="Penguins and wildlife">
                     </div>
                     <div class="initiative-content">
-                        <h3>Ocean Conservation</h3>
-                        <p>Protecting marine ecosystems, reducing plastic pollution, and promoting sustainable fishing practices.</p>
+                        <h3>Wildlife Protection</h3>
+                        <p>Protecting penguin colonies, seals, krill, and whales by advocating for sustainable fisheries and minimizing disturbance.</p>
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
+                        <img src="https://images.unsplash.com/photo-1516637090014-cb1ab0d08fc7?auto=format&fit=crop&w=2072&q=80" alt="Research vessel in Antarctic waters">
                     </div>
                     <div class="initiative-content">
-                        <h3>Renewable Energy</h3>
-                        <p>Promoting solar, wind, and other clean energy sources to reduce dependence on fossil fuels.</p>
+                        <h3>Southern Ocean Protection</h3>
+                        <p>Promoting large-scale marine protected areas to safeguard key feeding grounds and migration routes in the Southern Ocean.</p>
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
@@ -615,9 +638,9 @@
     <!-- CTA Section -->
     <section class="cta" id="get-involved">
         <div class="container">
-            <h2>Join Our Global Movement</h2>
-            <p>Together, we can create a sustainable future for generations to come. Every action counts, no matter how small.</p>
-            <a href="#" class="btn">Become a Member</a>
+            <h2>Be a Guardian of the Frozen Continent</h2>
+            <p>Your choices—from energy use to seafood consumption—affect Antarctica’s future. Join a global community working to keep it wild, white, and thriving.</p>
+            <a href="#" class="btn">Join the Antarctic Shield</a>
         </div>
     </section>
 
@@ -626,11 +649,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Network</h3>
-                    <p>We are dedicated to protecting our planet through collaborative action, education, and sustainable solutions.</p>
+                    <h3>Antarctic Shield</h3>
+                    <p>We are dedicated to protecting Antarctica and the Southern Ocean through science, collaboration, and public engagement.</p>
                     <div class="social-links">
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
@@ -639,58 +662,60 @@
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">Antarctica</a></li>
                         <li><a href="#initiatives">Initiatives</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
+                        <li><a href="#get-involved">Take Action</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Our Programs</h3>
+                    <h3>Focus Areas</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Reforestation</a></li>
-                        <li><a href="#">Ocean Cleanup</a></li>
-                        <li><a href="#">Wildlife Protection</a></li>
+                        <li><a href="#">Ice Sheet Stability</a></li>
+                        <li><a href="#">Krill & Fisheries</a></li>
+                        <li><a href="#">Penguin Colonies</a></li>
+                        <li><a href="#">Protected Marine Areas</a></li>
                         <li><a href="#">Climate Education</a></li>
-                        <li><a href="#">Sustainable Agriculture</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Copper Creek Drive, New York</p>
-                    <p><i class="fas fa-phone"></i> +1 (312) 171-0771</p>
-                    <p><i class="fas fa-envelope"></i> support@greennetwork.org</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Polar Science Center, Gateway City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 210-8740</p>
+                    <p><i class="fas fa-envelope"></i> contact@antarcticshield.org</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Green Network. All rights reserved.</p>
+                <p>&copy; 2025 Antarctic Shield. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
         // Mobile Menu Toggle
-        document.querySelector('.mobile-menu').addEventListener('click', function() {
+        document.querySelector('.mobile-menu').addEventListener('click', function () {
             document.querySelector('nav ul').classList.toggle('active');
         });
 
-        // Counter Animation
+        // Counter Animation (simple static animation on load)
         function animateCounters() {
             const counters = document.querySelectorAll('.counter');
             const speed = 200; // The lower the slower
-            
+
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
-                
-                const inc = target / speed;
-                
-                if(count < target) {
-                    counter.innerText = Math.ceil(count + inc);
-                    setTimeout(animateCounters, 1);
-                } else {
-                    counter.innerText = target;
-                }
+                const updateCount = () => {
+                    const count = +counter.innerText;
+                    const inc = Math.max(1, Math.floor(target / speed));
+
+                    if (count < target) {
+                        counter.innerText = count + inc;
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
             });
         }
 
@@ -699,24 +724,23 @@
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
+                if (targetId === '#') return;
+
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     document.querySelector('nav ul').classList.remove('active');
                 }
             });
         });
     </script>
 </body>
-
 </html>
